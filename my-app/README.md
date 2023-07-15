@@ -5,3 +5,5 @@
    로그인 시 홈으로 돌아가는 것 까지는 되어있으나 post400에러가 납니다.
 
 https://developers.kakao.com/docs/latest/ko/kakaologin/rest-api   
+
+https://diddl.tistory.com/157

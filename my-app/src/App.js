@@ -7,8 +7,9 @@ import PersonIcon from '@mui/icons-material/Person'
 import Home from './pages/Home'
 import MyPage from './pages/MyPage'
 import LogInPage from './pages/LogInPage'
+import SearchFriend from './pages/SearchFriend'
 import KakaoRedirectHandler from './components/KakaoCallback';
-
+import SearchIcon from '@mui/icons-material/Search';
 
 
 function App() {
@@ -28,10 +29,16 @@ function App() {
               LogIn
             </Typography>
           </IconButton>
-          <IconButton color="inherit" edge="end" component={Link} to="/mypage">
+          <IconButton color="inherit" edge="end" component={Link} to="/mypage" style={{marginRight: '20px'}}>
             <PersonIcon />
             <Typography variant="h6" color="inherit" component="div">
               MyPage
+            </Typography>
+          </IconButton>
+          <IconButton color="inherit" edge="end" component={Link} to="/searchfriends">
+            <SearchIcon />
+            <Typography variant="h6" color="inherit" component="div">
+              SearchFriend
             </Typography>
           </IconButton>
         </Toolbar>
@@ -40,6 +47,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/loginpage" element={<LogInPage />} />
         <Route path="/mypage" element={<MyPage />} />
+        <Route path="/searchfriends" element={<SearchFriend />} />
         <Route path="/auth" element={<KakaoRedirectHandler />} />
       </Routes>
     </Router>
